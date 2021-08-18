@@ -101,7 +101,7 @@ listaDeTarefas.splice(indice, 1)
 console.log(listaDeTarefas)
 
 
-
+alterado
 
 // function compararNumeros (numero1, numero2) {
 //     console.log("Função chamada")
