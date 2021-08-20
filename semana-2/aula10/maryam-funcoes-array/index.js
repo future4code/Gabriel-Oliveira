@@ -131,44 +131,123 @@ const pets = [
    { nome: "Caramelo", raca: "Vira-lata"},
 ]
 
-const petsNomes = pets.map((item, index, array) => {
+const petsNomes = pets.map((item) => {
    return item.nome
-}
-)
+})
 console.log("1 A)",petsNomes)
 
 
-const petsRaca = pets.filter((item, index, array) => {
-   return item.raca ===  "Salsicha"
+//1 b) Crie um novo array apenas com os cachorros salsicha
+
+const petsRaca = pets.filter((item) => {
+   return item.raca === "Salsicha"
 }
 )
 console.log("1 B)",petsRaca)
-
-const petsPoodles = pets.filter((item, index, array) => {
-   return item.raca ===  "Poodle"
-}
-)
-// .map((item, index, array) => {
-//     return item.nome
-//  }
-
-
-console.log(petsPoodles)
-// console.log(`1 C): Você ganhou um cupom de desconto de 10% para tosar o/a ${petsPoodles}`)
-
-
 
 // 1) c) Crie um novo array que possuirá mensagens para enviar para todos os 
 // clientes que são poodles. A mensagem deve ser: "Você ganhou um cupom de desconto 
 // de 10% para tosar o/a [NOME]!"
 
-// 1) d)
+const petsPoodles = pets.filter(item => item.raca === "Poodle")
+.map( item => {
+   console.log(`1 C): Você ganhou um cupom de desconto de 10% para tosar o/a ${item.nome}`)
+   return item.nome
+})
+
+// 2a) Crie um novo array que contenha apenas o nome de cada item
+const produtos = [
+   { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
+   { nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8 },
+   { nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6 },
+   { nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7 },
+   { nome: "Leite", categoria: "Bebidas", preco: 2.99 },
+   { nome: "Cândida", categoria: "Limpeza", preco: 3.30 },
+   { nome: "Detergente Ypê", categoria: "Limpeza", preco: 2.2 },
+   { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
+   { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
+   { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
+]
+
+const produtosNomes = produtos.map((item, index, array) => {
+   return item.nome
+}
+)
+console.log("2 A)",produtosNomes)
+
+
+// 2b) Crie um novo array que contenha um objeto com o nome e o preço
+// de cada item, aplicando 5% de desconto em todos eles
+const produtosNomePreco = produtos.map((item) => {
+   return {nome: item.nome, preco: (item.preco*0.95).toFixed(2)}
+}
+)
+console.log("2 B)",produtosNomePreco)
+
+
+
+// 2c) Crie um novo array que contenha apenas os objetos da categoria Bebidas
+const produtosBebidas = produtos.filter((item) => {
+   return item.categoria === "Bebidas"
+}
+)
+console.log("2 C)",produtosBebidas)
+
+// 2d) Crie um novo array que contenha apenas os objetos cujo nome contenha 
+//a palavra "Ypê"
+const produtosYpe = produtos.filter((item) => {
+   return item.nome.includes("Ypê")
+}
+)
+console.log("2 D",produtosYpe)
+
+// 2E) Crie um novo array onde cada item é uma frase "Compre [NOME] por [PREÇO]". 
+// Esse array deve conter frases apenas dos itens cujo nome contenha a palavra "Ypê"
+const compreProdutosNomePreco = produtos.filter((item) => {
+   return item.nome.includes("Ypê")
+}
+).map( item => {
+   console.log(`1 E): Compre ${item.nome} por R$ ${item.preco}`)
+   return item.nome
+})
 
 
 //XXXXXXXXXXXXXXXXXXXXXXX FIM DOS EXERCICIOS DA TARDE XXXXXXXXXXXXXXXXXXXXXXX
 
 
 //XXXXXXXXXXXXXXXXXXXXXXX INICIO DESAFIOS XXXXXXXXXXXXXXXXXXXXXXX
+//1)Dado o seguinte array de pokémons, 
+//realize as operações pedidas nos itens abaixo:
+//a) Crie um novo array que contenha apenas o nome dos pokémons em ordem 
+//alfabética
+const pokemons = [
+   { nome: "Bulbasaur", tipo: "grama" },
+   { nome: "Bellsprout", tipo: "grama" },
+   { nome: "Charmander", tipo: "fogo" },
+   { nome: "Vulpix", tipo: "fogo" },
+   { nome: "Squirtle", tipo: "água" },
+   { nome: "Psyduck", tipo: "água" },
+]
+
+
+const nomesPokemons = pokemons.map((item) => {
+   return item.nome
+})
+console.log("1 A)",(nomesPokemons.sort()))
+
+// b) Crie um novo array apenas com os tipos dos pokémons, sem repetição
+const pokemonsSemrepeticao = pokemons.map((item) => {
+   listaNomesSemRepeticao = ""
+   for (i=0; i<pokemons.length; i++){
+      pokemons.length[i] === listaNomesSemRepeticao
+      listaNomesSemRepeticao = pokemons.push(pokemons.length[i])
+   }
+   return `1 B) ${pokemonsSemrepeticao}`
+ 
+}  
+)
+
+//não consegui terminar o segundo
 
 
 //XXXXXXXXXXXXXXXXXXXXXXX FIM DESAFIOS XXXXXXXXXXXXXXXXXXXXXXX
