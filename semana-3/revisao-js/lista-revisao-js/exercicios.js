@@ -8,17 +8,15 @@ function retornaTamanhoArray(array1) {
    
     return array1.length
 }
-console.log(retornaTamanhoArray)
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
   return array.reverse()
 }
-console.log(retornaArrayInvertido)
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-  
+   return array.sort((a,b) => a-b)
 }
 
 // EXERCÍCIO 04
