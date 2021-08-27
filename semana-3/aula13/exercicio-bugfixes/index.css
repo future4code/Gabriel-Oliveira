@@ -100,6 +100,11 @@ table {
     width: 60%;
 }
 
+.container-vendas-detalhadas {
+    display: flex;
+    justify-content: center;
+}
+
 #vendas-detalhadas td {
     text-align: center;
 }
