@@ -104,8 +104,13 @@ table {
     width: 60%;
 }
 
-table td {
-    text-align: center;    
+#vendas-detalhadas td {
+    text-align: center;
+}
+
+#vendas-detalhadas td img {
+    width: 50px ;
+    height: 50px;
 }
 
 td button {
