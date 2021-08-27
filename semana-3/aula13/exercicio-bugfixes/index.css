@@ -107,6 +107,11 @@ table {
     height: 50px;
 }
 
+#vendas-detalhadas td button:hover {
+    background-color: #bda121;
+    color: white;
+}
+
 td button {
     background-color: #fadf63;
     width: 150px;
