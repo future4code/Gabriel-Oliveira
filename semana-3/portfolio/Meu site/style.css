@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;    
+    text-align: center;
+    
+}
+
+.profile-picture{
+    text-align: center;
+    background-color:dimgray;
+}
+
+.profile-picture a {
+    color: black;
+}
+
+.work-history {
+
+
+}
+
+.graduation{
+
+
+}
+
+.projects img{
+    height: 200px;
+    width: 300px;
+
+}
+
+
+.profile-picture img {
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+}
+
+.profile-picture a {
+    
+}
+
+section {
+    margin: 15px;
+}
+
+footer{
+    margin: 15px;
+}
+
+footer div{
+    margin: 15px;
+    
+}
+
+footer p{
+    margin: 5px;
+    
+}
+
+.contato{
+    font-style: 10;
+}
+
+#mensagem{ 
+    min-width: 700px;
+    height: 300px;
+}
+
+#botaoenviar{
+    font-size: large;
+    margin: 25px 0 0 0;
+    padding: 8px 12px 8px 12px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
